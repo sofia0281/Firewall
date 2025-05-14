@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: firewall_project
+Version: 0.1
+Summary: Firewall Project
+Author: Sofia Soto
+Author-email: sofia.soto@utp.edu.co
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: python-dotenv
+Requires-Dist: scapy
+Requires-Dist: requests
+Requires-Dist: altgraph==0.17.2
+Requires-Dist: future==0.18.2
+Requires-Dist: macholib==1.15.2
+Requires-Dist: six==1.15.0
+Requires-Dist: wheel==0.44.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+# Firewall
