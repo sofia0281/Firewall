@@ -1,3 +1,5 @@
+# GUIA DE IMPLEMENTACIÓN - FIREWALL
+
 Este proyecto ofrece funcionalidades básicas de firewall, implementado en Python, usando el patrón Chain of Responsibility. Su objetivo es analizar y monitorear el tráfico de red (paquetes TCP, UDP, ICMP…) aplicando reglas personalizables en cascada, como:
 
 **Filtrado por IP:** Alerta si la IP de origen de un paquete si no está dentro de la lista de IPs permitidas
@@ -21,22 +23,24 @@ Este proyecto ofrece funcionalidades básicas de firewall, implementado en Pytho
 
 ### 1. Descarga el proyecto
 
+Ingresa al cmd y ubícate  dentro de la carpeta o lugar donde quieras que quede guardado el firewall, y ejecuta este comando.
+`git clone https://github.com/sofia0281/Firewall.git`
+
 ### 2. Configura un entorno virtual
 
-Ingresa a la terminal y ve a la dirección de tu proyecto
+Ingresa a la terminal y ubícate dentro de Firewall
 
-```bash
-cd ruta/del/proyecto
-```
+Debe quedar algo así:
 
-Crea el entorno virtual
+C:tu_ruta\de\archivo\Firewall >>
+
+1. Crea el entorno virtual
 
 ```bash
 python -m venv venv
 ```
 
-Activa el entorno virtual
-
+1. Activa el entorno virtual
 - Windows
 
 ```bash
@@ -49,13 +53,13 @@ Activa el entorno virtual
 source venv/bin/activate
 ```
 
-Sabrás que se activó correctamente porque vas a ver esto al lado de tu ruta
+Sabrás que se **activó** correctamente porque vas a ver esto al lado de tu ruta
 
 ![image.png](attachment:ea86f391-305b-4bd1-a704-4b65bf55e8ec:image.png)
 
 ### 3. Instala las dependencias del proyecto
 
-Una vez activado el entorno, podrías instalar los paquetes necesario sin problemas:
+Una vez activado el entorno, podrás instalar los paquetes necesario sin problemas, recuerda que debe estar el entorno activado:
 
 - Instalar individualmente
 
@@ -68,6 +72,8 @@ pip install nombre_del_paquete
 ```bash
 pip install . 
 ```
+
+Si las librerías siguen apareciendo como no instaladas, cierra y abre de nuevo el visual studio.
 
 ### 4. Corre el proyecto
 
@@ -82,3 +88,21 @@ cd src
 ```bash
 python firewall.py
 ```
+
+Esto es lo que deberás ver en tu terminal:
+
+![image.png](attachment:ad3f238d-b98e-459c-bc8f-e4d498b3e8ed:image.png)
+
+Opción 1: Ejecutar firewall con las configuraciones del .env
+
+Opción 2: Puedes decirle al programa si quieres “habilitar” paquetes ICMP o no, y tambien puesdes ingresar ips permitidas o no escribir nada para ejecutar las del .env
+
+Notas: 
+
+1. Cada vez que cambies algo en el .env cierra la terminal e ingresa de nuevo al entorno virtual
+2. No cambies la configuración de la variable: STRICT_MODE del .env
+3. Siempre ejecuta dentro del venv
+
+Realizado por:
+Jancarlo Gallón
+Sofia Soto Parra
