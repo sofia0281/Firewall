@@ -1,5 +1,8 @@
 from setuptools import setup, find_packages
 
+with open('README.md', encoding='utf-8') as f:
+    long_description = f.read()
+
 setup(
     name='firewall_project',
     version='0.1',
@@ -9,11 +12,6 @@ setup(
         'python-dotenv', 
         'scapy',
         'requests',
-        'altgraph==0.17.2',
-        'future==0.18.2',
-        'macholib==1.15.2',
-        'six==1.15.0',
-        'wheel==0.44.0',
     ],
     entry_points={
         'console_scripts': [
@@ -21,7 +19,7 @@ setup(
         ],
     },
     description='Firewall Project',
-    long_description=open('README.md').read(),
+    long_description=long_description,
     long_description_content_type='text/markdown',
     author='Sofia Soto',
     author_email='sofia.soto@utp.edu.co',

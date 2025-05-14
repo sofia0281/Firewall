@@ -1,8 +1,3 @@
 python-dotenv
 scapy
 requests
-altgraph==0.17.2
-future==0.18.2
-macholib==1.15.2
-six==1.15.0
-wheel==0.44.0
